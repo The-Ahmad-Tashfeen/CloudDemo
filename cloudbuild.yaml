@@ -1,0 +1,11 @@
+steps:
+  - name: 'ubuntu'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo "Starting demo build"
+        echo "This build was triggered by Pub/Sub"
+        date
+        sleep 10
+        echo "Build complete"
